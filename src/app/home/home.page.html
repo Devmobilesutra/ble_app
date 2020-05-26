@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ble App
+    </ion-title>
+    <ion-button (click)="advertise()" slot="end">Advertise</ion-button>
+    <ion-button (click)="stop()" slot="end">STOP</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input type="text" [(ngModel)]="bname" name="bname" placeholder="Enter any name"></ion-input>
+  <ion-button (click)="setname()">SET NAME</ion-button>
+  <ion-button (click)="isAdvertisin()">IsAdvertising</ion-button>
+  <!-- <ion-button (click)="isAdvertisingAvail()">IsAdvertisingAvailable</ion-button> -->
+</ion-content>
